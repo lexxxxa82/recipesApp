@@ -7,12 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class FirstControllers {
 
     @GetMapping("/")
-    public String helloWorld() {
-        return "приложение запущено";
+    public String greetings() {
+        return "Приложение запущено";
     }
     @GetMapping("/info")
-    public String info () {
-        return "приложение запущено";
+    public String information () {
+        return "имя ученика- Игумнов Алексей Николаевич, " +
+                "название проекта - Кулинарные рецепты, " +
+                "дату создания проекта - 04.03.2023, " +
+                "описание проекта - приложение с кулинарными рецептами .";
     }
 
 }
