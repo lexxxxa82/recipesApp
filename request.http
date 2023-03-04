@@ -1,0 +1,22 @@
+GET http://localhost:8080
+###
+GET http://localhost:8080/info
+###
+POST http://localhost:8080/recipe
+Content-Type: application/json
+
+{
+  "title ": "тест2",
+  "cookingTime" : 30,
+"ingredients":[
+{
+"title": 1,
+"measure":"прайс"
+}
+],
+"steps":[
+"Step 1",
+"Step2",
+"Step3"
+]
+}
