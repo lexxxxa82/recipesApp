@@ -1,5 +1,6 @@
 package home.igumnoff.recipesapp.model;
 
+
 public class Ingredient {
     private String title;
     private int number;
