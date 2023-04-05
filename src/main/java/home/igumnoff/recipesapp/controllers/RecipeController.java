@@ -12,7 +12,7 @@ public class RecipeController {
     public RecipeController(RecipeService recipeService){
         this.recipeService=recipeService;
     }
-    @GetMapping("/id")
+    @GetMapping({"/{id}"})
     public RecipeDTO getRecipe(@PathVariable("id")int id){
         return recipeService.getRecipe(id);
     }
