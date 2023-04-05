@@ -8,14 +8,14 @@ import java.util.List;
 public class RecipeDTO {
     private final int id;
     private final String title;
-    private final int CookingTime;
+    private final int cookingTime;
     private final List<Ingredient> Ingredients;
     private final List<String> steps;
 
     public RecipeDTO(int id, String title, int cookingTime, List<Ingredient> ingredients, List<String> steps) {
         this.id = id;
         this.title = title;
-        CookingTime = cookingTime;
+        this.cookingTime = cookingTime;
         Ingredients = ingredients;
         this.steps = steps;
     }
@@ -29,7 +29,7 @@ public class RecipeDTO {
     }
 
     public int getCookingTime() {
-        return CookingTime;
+        return cookingTime;
     }
 
     public List<Ingredient> getIngredients() {

@@ -6,14 +6,14 @@ public class Recipe {
 
     private String title;
 
-    private int CookingTime;
+    private int cookingTime;
 
     private List<Ingredient> Ingredients;
     private List<String> steps;
 
     public Recipe(String title, int cookingTime, List<Ingredient> ingredients, List<String> steps) {
         this.title = title;
-        CookingTime = cookingTime;
+        this.cookingTime = cookingTime;
         Ingredients = ingredients;
         this.steps = steps;
     }
@@ -27,11 +27,11 @@ public class Recipe {
     }
 
     public int getCookingTime() {
-        return CookingTime;
+        return cookingTime;
     }
 
     public void setCookingTime(int cookingTime) {
-        CookingTime = cookingTime;
+        this.cookingTime = cookingTime;
     }
 
     public List<Ingredient> getIngredients() {
